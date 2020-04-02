@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+	body {
+		background-color: #ccffee;
+		text-align: left;
+	}
+
+</style>
+<body>
+	<div>
+		<h1 id="title">Dog Adoption Survey Part I.</h1>
+		<p id="description">Helping you to choose the right dog</p>
+		<form id="survey-form">
+		<label id="name-label" for="fullname">Full name:</label><br>
+		<input type="text" id="name" name="fullname" placeholder="Jon Doe" required><br>
+		<label id="email-label" for="email">E-mail:</label><br>
+		<input type="email" id="email" name="email" placeholder="jondoe1@mail.com"required><br>
+		<label id="number-label" for="number">How many people (including children) live in your household?</label><br>
+		<input type="number" id="number" name="number" min="0" max="20" placeholder="0" required><br>
+		<label for="number">How many children under the age of 14 live in your household?</label><br>
+		<input type="number" id="number" name="number" min="0" max="20" placeholder="0" required><br><br>
+		<input type="submit" value="Submit">
+		<div>
+			<p>Please choose</p>
+			<input type="radio" id="hometype1" name="gardentype" value="securegarden">
+			<label for="hometype1">I have a secure garden</label><br>
+			<input type="radio" id="hometype2" name="gardentype" value="garden">
+			<label for="hometype2">I have a garden</label><br>
+			<input type="radio" id="hometype3" name="gardentype" value="nogarden">
+			<label for="hometype3">I don't have a garden</label><br><br>
+		</div>
+		<select id="dropdown" name="purpose">
+  	<option value="guard">Guard dogs</option>
+  	<option value="family">Family-friendly dogs</option>
+  	<option value="athletic">Athletic dogs</option>
+  	<option value="lap">Lap dogs</option>
+  	</select><br><br>
+		<input type="checkbox" value="singles">Dogs for busy singles<br>
+  	<input type="checkbox" value="seniors">Dogs for seniors<br>
+  	<input type="checkbox" value="apartment">Dogs for an apartment<br>
+  	<input type="checkbox" value="multi-pet">Dogs for multi-pet households<br>
+  	<input type="checkbox" value="hypo">Hypoallergenic dogs<br>
+  	<input type="checkbox" value="newbie">Dogs for a newbi<br>
+		<p>Any comment or suggestion?</p>
+		<textarea rows="4" cols="50" name="comment" form="survey-form">
+		Enter text here...</textarea><br><br>
+		<input id="submit" type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
